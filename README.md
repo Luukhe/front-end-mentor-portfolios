@@ -1,14 +1,12 @@
 # Links para os projetos #
 
+* <a href="https://fylo-landing-page-with-two-column-layout-master-lemon.vercel.app/" target="_blank">Fylo landing page</a>
 
+* <a href="https://recipe-main-page-rose.vercel.app/" target="_blank">Recipe main page</a>
 
-* https://fylo-landing-page-with-two-column-layout-master-lemon.vercel.app/
+* <a href="https://social-proof-section-master-rouge-nine.vercel.app/" target="_blank">Social proof section</a>
 
-* https://recipe-main-page-rose.vercel.app/
-
-* https://social-proof-section-master-rouge-nine.vercel.app/
-
-* https://testimonials-grid-section-main-pink.vercel.app/
+* <a href="https://testimonials-grid-section-main-pink.vercel.app/" target="_blank">Testimonials grid section</a>
 
 
 

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+/* font-family: "Open Sans", sans-serif; */
+
+:root {
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    --White: white;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+h2, h3, nav {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ----------------------- HEADER STARTS HERE ------------------------------- */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+}
+
+header img {
+    width: 90px;
+}
+
+header ul {
+    display: flex;
+    gap: 0 1em;
+}
+
+header ul a {
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+}
+
+
+/* ------------------------------------ MAIN STARTS HERE ---------------------------------- */
+
+.files {
+    margin: 3em 0;
+    padding: 0 1.6em;
+    text-align: center;
+}
+
+.files img {
+    width: 100%;
+}
+
+.files h2 {
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+    font-size: 32px;
+    margin: 1em 0;
+    line-height: 1.3em;
+}
+
+.files p {
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 2em;
+}
+
+.files input[type="email"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 0 1em 1.5em;
+    border-radius: .3em;
+    border: 1px solid var(--Very-Dark-Blue);
+}
+
+.files input::placeholder {
+    color: var(--Light-Gray);
+}
+
+.get-started-button {
+    display: inline-block;
+    width: 100%;
+    border-radius: .25em;
+    background-color: var(--Bright-Blue);
+    color: var(--White);
+    padding: 1em 0;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.files label:active {
+    background-color: cornflowerblue;
+}
+
+.testimonial {
+    background-image: url(../images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 3em 1em;
+    box-sizing: border-box;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(5, auto) 1fr;
+}
+
+.testimonial > img {
+    width: 100%;
+    grid-column: 1/-1;
+}
+
+.testimonial h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 4em 0 2em;
+
+    grid-column: 1/-1;
+}
+
+.testimonial-container > p {
+    color: var(--Desaturated-Blue);
+    margin: .5em 0;
+    padding: 0 1em;
+
+    grid-column: 1/-1;
+}
+
+.testimonial a {
+    color: var(--Moderate-Cyan);
+    text-decoration: none;
+    border-bottom: 2px solid var(--Moderate-Cyan);
+    padding-bottom: .35em;
+    margin: 1.2em 0;
+    
+    grid-column: 2/3;
+    grid-row: 5/6;
+
+    display: flex;
+    align-items: center;
+}
+
+.testimonial a img {
+    width: 24px;
+    height: 24px;
+    margin-left: .35em;
+}
+
+.kyle-burton {
+    grid-row: 6;
+    grid-column: 1/-1;
+
+    background-color: var(--White);
+    color: var(--Very-Dark-Blue);
+    margin: 2em;
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 0px 0px 8px 8px var(--Light-Grayish-Blue);
+}
+
+.kyle-burton-qticon {
+    margin-bottom: 1em;
+    width: 16px;
+    height: 16px;
+}
+
+.kyle-burton-about {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5em 1em;
+    margin-top: 1em;
+}
+
+.kyle-burton-about img {
+    width: 46px;
+    height: 46px;
+    grid-row: 1/3;
+    border-radius: 100%;
+}
+
+.kyle-burton-name {
+    align-self: end;
+    font-weight: bold;
+}
+
+.kyle-burton-occupation {
+    font-size: 12px;
+}
+
+.access {
+    text-align: center;
+    background-color: var(--Desaturated-Blue);
+    color: var(--Light-Grayish-Blue);
+    padding: 4em 2.5em;
+}
+
+.access h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.access p {
+    margin: 2em 0;
+}
+
+.access input[type="email"] {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: .75em;
+    border-radius: .2em;
+    border: none;
+}
+
+.access input[type="email"]::placeholder {
+    color: var(--Light-Gray);
+}
+
+.access .get-started-button {
+    width: 86.5%;
+    font-size: 14px;
+}
+
+/* ------------------------------ FOOTER STARTS HERE ---------------------------------- */
+
+footer {
+    background-color: var(--Very-Dark-Blue);
+    padding: 4em 2.5em;
+    color: var(--Light-Grayish-Blue);
+}
+
+footer h1 {
+    margin-bottom: 2em;
+}
+
+footer h1 img {
+    filter: brightness(0) invert(100%);
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2em;
+}
+
+footer p:nth-child(3) {
+    margin-top: 1em;
+}
+
+footer ul:nth-child(4) {
+    margin: 3em 0;
+}
+
+footer ul li {
+    margin-bottom: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--Light-Grayish-Blue);
+    cursor: pointer;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    margin-top: 3em;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+    padding: .5em;
+}
+
+.footer-social-media a img {
+    width: 22px;
+    height: 22px;
+}

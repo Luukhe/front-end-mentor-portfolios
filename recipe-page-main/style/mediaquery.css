@@ -1,0 +1,26 @@
+@media (min-width: 1440px) {
+
+    body {
+        background-color: var(--Rose50);
+    }
+
+    main {
+        background-color: white;
+        max-width: 800px;
+        margin: 7em auto;
+        padding: 2em;
+        border-radius: 1em;
+    }
+
+    section {
+        padding: 2em 0;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: .75em;
+        max-width: 800px;
+    }
+
+}

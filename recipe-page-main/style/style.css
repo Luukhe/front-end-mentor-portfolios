@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* Para colocar no font-family é: Young Serif */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Para colocar no font-family é: Outfit */
+
+:root {
+    --Stone600: hsl(30, 10%, 34%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(30, 54%, 90%);
+}
+
+
+/* CLASS REFACTOR AREA START */
+
+main, .preparation-list p, .ingredients-list p, .instructions-list p {
+    color: var(--Stone600);
+}
+
+p, .preparation-list, .nutrition-list hr {
+    margin: 1.5em 0
+}
+
+h2, .ingredients-list, .instructions-list, .nutrition-list-item strong {
+    color: var(--Brown800);
+}
+
+.preparation-list h3, .preparation-list strong, .instructions-list, .instructions-list strong, .nutrition-list-item strong, footer {
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: 'Young Serif';
+}
+
+/* CLASS REFACTOR AREA END */
+
+
+
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 2em;
+    font-family: 'Outfit';
+}
+
+h1 {
+    font-size: 36px;
+    color: hsl(24, 5%, 18%)
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.preparation-list {
+    padding: 1em;
+    background-color: hsl(330, 100%, 98%);
+    list-style-type: disc;
+    color: var(--Rose800);
+    border-radius: .75em;
+}
+
+.preparation-list h3 {
+    color: var(--Rose800);
+    font-size: 18px;
+}
+
+.preparation-list li {
+    margin: 1.2em;
+}
+
+.preparation-list p {
+    display: inline-block;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.ingredients-list {
+    list-style: disc;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.ingredients-list p {
+    margin-left: 1em;
+}
+
+hr {
+    margin: 0.5em 0 2em 0;
+    border-color: hsl(0, 0%, 95%)
+}
+
+.instructions-list {
+    list-style: decimal;
+}
+
+.instructions-list li {
+    margin: 1.5em;
+}
+
+.instructions-list p {
+    margin-left: 1em;
+    font-weight: normal;
+}
+
+.nutrition-list-item {
+    margin-left: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nutrition-list-item strong {
+    grid-column: 2;
+}
+
+footer {
+    background-color: rgb(221, 221, 221);
+    font-family: 'Outfit';
+    text-align: center;
+    padding: .7em;
+    margin-top: 1em;
+}
+
+footer a {
+    text-decoration: none;
+}
